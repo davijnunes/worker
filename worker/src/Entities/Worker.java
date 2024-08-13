@@ -84,7 +84,9 @@ public class Worker {
 		for(HourContract c: contracts) {
 			
 			
-			if(c.getDate().getYear() == year && c.getDate().getMonthValue() == month) {
+			if(
+					c.getDate().getYear() == year && c.getDate().getMonthValue() == month
+					) {
 				
 				sum += c.valueTotal();
 				
